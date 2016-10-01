@@ -14,15 +14,11 @@ $scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
 $availableLanguages = Get-AvailableLanguages
 
 $document = $availableLanguages.Keys | % {
-	$username = 'wa651f5'
-	$password = 'anonymous'
-
 	$actualLangCode = $availableLanguages.Get_Item($_)
-	$uri = "ftp://mh-nexus.de/HxDSetup${actualLangCode}.zip"
-	$uriWithCredentials = "ftp://${username}:${password}@mh-nexus.de/HxDSetup${actualLangCode}.zip"
+	$uri = "https://mh-nexus.de/downloads/HxDSetup${actualLangCode}.zip"
 	
 	$tempFile = [System.IO.Path]::GetTempFileName()
-	Invoke-WebRequest -Uri $uriWithCredentials -OutFile $tempFile -UserAgent "Update checker of Chocolatey Community Package 'HxD'"
+	Invoke-WebRequest -Uri $uri -OutFile $tempFile -UserAgent "Update checker of Chocolatey Community Package 'HxD'"
 	
 	$entry = @{lang = $_; uri = $uri; hash = (Get-FileHash $tempFile -Algorithm 'SHA256').Hash}
 	Remove-Item $tempFile
