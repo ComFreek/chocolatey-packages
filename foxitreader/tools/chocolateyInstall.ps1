@@ -3,7 +3,7 @@
 # See the comments in  https://github.com/ComFreek/chocolatey-packages/blob/master/foxitreader/update.ps1
 # on the '/de/' part.
 $url32       = 'https://www.foxitsoftware.com/de/downloads/latest.php?product=Foxit-Reader&platform=Windows&version=9.0.1.1049&package_type=exe&language=English'
-$checksum32  = '8130970e6976a953e98f89fcf24783b67d1080f84b961ac2c1cee2051673ff9a'
+$checksum32  = 'b3997922b49f7f9aca4c411717d459337b962243c5675ff8159f0d5cc6185441'
 
 $packageArgs = @{
 	packageName    = 'foxitreader'
