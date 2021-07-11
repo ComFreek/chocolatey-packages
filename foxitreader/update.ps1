@@ -38,13 +38,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	# Query the latest version
-	$uri = 'https://www.foxitsoftware.com/pdf-reader/version-history.html'
+	$uri = 'https://www.foxit.com/pdf-reader/version-history.html'
 	$page = Invoke-WebRequest -Uri $uri -UserAgent "Update checker of Chocolatey Community Package 'foxitreader'"
 
 	$version = [Regex]::Matches($page.Content, "(?i)<h3[^>]*>(Foxit Reader|Version) (.*)</h3>").Groups[2].Value
 
-	# The "&language=German' parameter will force the download of "FoxitReader101_L10N_Setup_Prom.exe" containing all available languages.
-	$url32 = "https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=German&version=$version"
+	# The "&language=German' parameter will force the download of "FoxitReader110_L10N_Setup_Prom.exe" containing all available languages.
+	$url32 = "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&package_type=exe&language=German&version=$version"
 
 	$actualVersion = $version
 

@@ -3,37 +3,37 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>foxitreader</id>
-    <title>Foxit Reader</title>
+    <title>Foxit PDF Reader</title>
     <version>10.1.1.37576</version>
     <authors>Foxit Software Incorporated</authors>
     <owners>ComFreek H.AlanStevens</owners>
     <summary>Foxit Reader: The Best PDF Reader</summary>
-    <description><![CDATA[Foxit Reader: The Best PDF Reader. With Foxit Reader you can read and annotate PDF documents and fill out PDF forms.
+    <description><![CDATA[Foxit PDF Reader: The Best PDF Reader. With Foxit PDF Reader you can read and annotate PDF documents and fill out PDF forms.
 
-**All open FoxitReader, Windows Explorer and browser instances must be closed during installation, update and uninstallation.**
+**All open Foxit PDF Reader, Windows Explorer and browser instances must be closed during installation, update and uninstallation.**
 Otherwise, you might encounter error dialogs during the process asking you to close all instances.
-Windows Explorer must be closed due to Foxit Reader's shell plugins, browser instances shall be closed proactively due to PDFs displayed inline.
+Windows Explorer must be closed due to Foxit PDF Reader's shell plugins, browser instances shall be closed proactively due to PDFs displayed inline.
 
 ### Install arguments
 
 - **Language**: Pass one of the [supported ISO 639-1 two-letter codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), e.g. `/LANG=en` or `/LANG=es` or `/LANG=de`.
 - **Tasks, Components**: configure desktop icons, file association, browser plugins, ConnectedPDF among others.<br>
-    FoxitReader uses Inno Setup, from [whose relevant flags](http://jrsoftware.org/ishelp/index.php?topic=setupcmdline) the relevant subset for FoxitReader in "tasks" and "components" section is [listed here](https://gist.github.com/anonymous/6ab0d828cc626834e2048d9cf4ed30e1).
+    Foxit PDF Reader uses Inno Setup, from [whose relevant flags](http://jrsoftware.org/ishelp/index.php?topic=setupcmdline) the relevant subset for Foxit PDF Reader in "tasks" and "components" section is [listed here](https://gist.github.com/anonymous/6ab0d828cc626834e2048d9cf4ed30e1).
 
     For example, you would like no desktop icon, no default file association, no browser plugin and no ConnectedPDF, then run this command:
 
     ```
     choco install foxitreader --ia '/MERGETASKS="!desktopicon,!setdefaultreader,!displayinbrowser /COMPONENTS=*pdfviewer,*ffse,*installprint,*ffaddin,*ffspellcheck,!connectedpdf"'
     ```
-    Note that contrary to `/MERGETASKS`, you have to specify in `/COMPONENTS` also those components which you would like to retain. You can get those from the link above of Foxit Reader-specific tasks and components. An asterisk (*) prefix results in all sub-components automatically being included as well, cf. Inno Setup's documentation linked above.
+    Note that contrary to `/MERGETASKS`, you have to specify in `/COMPONENTS` also those components which you would like to retain. You can get those from the link above of Foxit PDF Reader-specific tasks and components. An asterisk (*) prefix results in all sub-components automatically being included as well, cf. Inno Setup's documentation linked above.
 
 ]]></description>
-    <projectUrl>https://www.foxitsoftware.com/pdf-reader/</projectUrl>
-    <docsUrl>https://www.foxitsoftware.com/support/usermanuals.php</docsUrl>
+    <projectUrl>https://www.foxit.com/pdf-reader/</projectUrl>
+    <docsUrl>https://www.foxit.com/support/usermanuals.html</docsUrl>
     <packageSourceUrl>https://github.com/ComFreek/chocolatey-packages/tree/master/foxitreader</packageSourceUrl>
-    <releaseNotes>https://www.foxitsoftware.com/pdf-reader/version-history.html</releaseNotes>
+    <releaseNotes>https://www.foxit.com/pdf-reader/version-history.html</releaseNotes>
     <tags>Foxit PDF Reader office admin</tags>
-    <licenseUrl>https://www.foxitsoftware.com/pdf-reader/eula.html</licenseUrl>
+    <licenseUrl>https://www.foxit.com/pdf-editor/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/ComFreek/chocolatey-packages@695c150e199b34151a923fa4953e46c3065a2e30/icons/FoxitReader.png</iconUrl>
   </metadata>
