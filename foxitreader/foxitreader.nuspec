@@ -23,7 +23,7 @@ Windows Explorer must be closed due to Foxit PDF Reader's shell plugins, browser
     For example, you would like no desktop icon, no default file association, no browser plugin and no ConnectedPDF, then run this command:
 
     ```
-    choco install foxitreader --ia '/MERGETASKS="!desktopicon,!setdefaultreader,!displayinbrowser /COMPONENTS=*pdfviewer,*ffse,*installprint,*ffaddin,*ffspellcheck,!connectedpdf"'
+    choco install foxitreader --ia '/MERGETASKS="!desktopicon,!setdefaultreader,!displayinbrowser" /COMPONENTS="*pdfviewer,*ffse,*installprint,*ffaddin,*ffspellcheck,!connectedpdf"'
     ```
     Note that contrary to `/MERGETASKS`, you have to specify in `/COMPONENTS` also those components which you would like to retain. You can get those from the link above of Foxit PDF Reader-specific tasks and components. An asterisk (*) prefix results in all sub-components automatically being included as well, cf. Inno Setup's documentation linked above.
 
