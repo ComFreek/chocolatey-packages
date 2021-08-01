@@ -8,8 +8,8 @@ $ErrorActionPreference = 'Stop'
 
 # See the comments in  https://github.com/ComFreek/chocolatey-packages/blob/master/foxitreader/update.ps1
 # on the &language=German part.
-$url32       = 'https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&package_type=exe&language=German&version=11.0.0.49893'
-$checksum32  = '6d33ca56b5c6e7f412ff7e7af6a78036df4e7affd1754975ca9a0a89df9d570c'
+$url32       = 'https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&package_type=exe&language=German&version=11.0.1.49938'
+$checksum32  = 'd6281d2029e46a2203dbf94d302f26213e264be2dee108e7cfd209bb13b15666'
 
 $installationArgs = @{
 	PackageName    = 'foxitreader'
