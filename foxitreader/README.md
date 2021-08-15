@@ -1,3 +1,15 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+## REPOSITORY DEPRECATED
+
+This repository is no longer being used for this package as of [version 11.0.0.49893](https://community.chocolatey.org/packages/FoxitReader/11.0.0.49893), and exists only for archival purposes.
+
+Issues and pull requests should not be submitted here.
+
+This package is now being maintained at [brogers5/chocolatey-package-foxitreader](https://github.com/brogers5/chocolatey-package-foxitreader).
+
+---
+
 Foxit Reader: The Best PDF Reader. With Foxit Reader you can read and annotate PDF documents and fill out PDF forms.
 
 **All open FoxitReader, Windows Explorer and browser instances must be closed during installation, update and uninstallation.**
